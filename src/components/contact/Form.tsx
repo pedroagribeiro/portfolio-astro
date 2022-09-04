@@ -5,7 +5,7 @@ import InfoModal from '../feedback/InfoModal';
 
 export default function Form() {
   const contact_submit_url =
-    'https://portfolio-backend-production-696d.up.railway.app';
+    'https://portfolio-backend-production-696d.up.railway.app/api/contacts/submit';
 
   const [modal, setModal] = useState(false);
   const [success, setSuccess] = useState(false);
