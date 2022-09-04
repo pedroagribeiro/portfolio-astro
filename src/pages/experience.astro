@@ -1,0 +1,28 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+import WorkExperience from '../components/experience/WorkExperience.astro';
+---
+
+<DefaultLayout title='Experience'>
+  <div class='xl:px-52 md:px-16 px-8'>
+    <WorkExperience
+      starting_date='October 2021'
+      ending_date='July 2022'
+      company='Altice Labs'
+      regime='Internship'
+      position='Backend Engineer'
+      location='Remote'
+      description='During the internship I had the opportunity to have my first contact with the production environment. I designed a full software from the ground up and helped to develop it and test it. I also developed my master thesis which is available for anyone to check out.'
+      technologies={['Java', 'Spring Boot', 'Docker']}
+    />
+    <WorkExperience
+      starting_date='September 2017'
+      ending_date='July 2022'
+      company='Bachelors & Masters Degree'
+      regime='Education'
+      position='Distributed Systems & Applications Engineering'
+      location='University of Minho - Braga'
+      description='Over these five years and I had the opportunity of going from zero software engineering knowledge level to a pretty satisfactory level in which I feel that with given time and effort I can obtain any goal to which I present myself. I had the opportunity to have contact with a whole variety of tools, from a wide array of programming languages to numerous software tools that make the life of software engineers a lot easier. Neverthless, the most important lesson is that an engineer must be ready to learn and defy his methods every day in order to never stop growing.'
+    />
+  </div>
+</DefaultLayout>

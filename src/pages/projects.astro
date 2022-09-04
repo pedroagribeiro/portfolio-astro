@@ -1,0 +1,125 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+import { Github, Globe, Gitlab } from 'lucide-react';
+---
+
+<DefaultLayout title='Projects'>
+  <div
+    class='xl:px-48 md:px-16 px-8 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1'
+  >
+    <div
+      class='max-w-xl h-96 flex flex-col justify-between rounded-lg border-2 border-stone-900 m-6 py-5 px-4'
+    >
+      <div>
+        <h4 tabindex='0' class='focus:outline-none font-bold mb-3'>
+          🍸 Beverage Management
+        </h4>
+        <p tabindex='0' class='focus:outline-none text-sm mb-2'>
+          The application aims to solve the middleman between high quantity
+          buyers and the company that sells the drink through the establishment
+          of a direct communication channel between the two parties.
+        </p>
+        <p tabindex='0' class='focus:outline-none text-sm mb-2'>
+          <strong>Technologies:</strong> Vue.js, Vuetify, Javascript, Java, SpringBoot,
+          MongoDB
+        </p>
+      </div>
+      <div>
+        <div class='flex items-center justify-between text-stone-900'>
+          <a
+            class='text-sm'
+            href='https://github.com/pedroagribeiro/home-server.git'
+            target='_blank'>Visit the repository</a
+          >
+          <Github size={30} />
+        </div>
+      </div>
+    </div>
+    <div
+      class='max-w-xl h-96 flex flex-col justify-between rounded-lg border-2 border-stone-900 m-6 py-5 px-4'
+    >
+      <div>
+        <h4 tabindex='0' class='focus:outline-none font-bold mb-3'>
+          🏠 Home Server
+        </h4>
+        <p tabindex='0' class='focus:outline-none text-sm mb-2'>
+          This project aims to keep centralize the configuration of my home
+          server. It also provides a way to deploy the full server from scratch
+          with a simple
+          <strong>Ansible</strong> command. A lot of the services are deployed in
+          a containerized way which allows me continuous contact with the <strong
+            >Docker</strong
+          > technology.
+        </p>
+        <p tabindex='0' class='focus:outline-none text-sm mb-2'>
+          <strong>Technologies:</strong> Bash, Docker, Ansible, Prometheus, Grafana,
+          NextCloud
+        </p>
+      </div>
+      <div>
+        <div class='flex items-center justify-between text-stone-900'>
+          <a
+            class='text-sm'
+            href='https://github.com/pedroagribeiro/home-server.git'
+            target='_blank'>Visit the repository</a
+          >
+          <Github size={30} />
+        </div>
+      </div>
+    </div>
+    <div
+      class='max-w-xl h-96 flex flex-col justify-between rounded-lg border-2 border-stone-900 m-6 py-5 px-4'
+    >
+      <div>
+        <h4 tabindex='0' class='focus:outline-none font-bold mb-3'>
+          📝 Delegatewise - Task Sharing Simplified
+        </h4>
+        <p tabindex='0' class='focus:outline-none text-sm mb-2'>
+          This application materializes a way of sharing tasks within a
+          collaborating environment in a fair and unworried way, it
+          automatically distributes the tasks by the registered users on a
+          weekly basis
+        </p>
+        <p tabindex='0' class='focus:outline-none text-sm mb-2'>
+          <strong>Technologies:</strong> React.js, Gatsby, Spring Boot, MongoDB
+        </p>
+      </div>
+      <div>
+        <div class='flex items-center justify-between text-stone-900'>
+          <a class='text-sm' href='https://delegatewise.com' target='_blank'
+            >Give the app a spin!</a
+          >
+          <Globe size={30} />
+        </div>
+      </div>
+    </div>
+    <div
+      class='max-w-xl h-96 flex flex-col justify-between rounded-lg border-2 border-stone-900 m-6 py-5 px-4'
+    >
+      <div>
+        <h4 tabindex='0' class='focus:outline-none font-bold mb-3'>
+          🔎 Java Project Analyser
+        </h4>
+        <p tabindex='0' class='focus:outline-none text-sm mb-2'>
+          Java projects from other students were analysed in a completely
+          automated way with the goal of assessing their code quality. Tools
+          were used in order to determine which the were the more common code
+          smells and mispractices
+        </p>
+        <p tabindex='0' class='focus:outline-none text-sm mb-2'>
+          <strong>Technologies:</strong> Java, SonarQube, EvoSuite, Python, Bash
+        </p>
+      </div>
+      <div>
+        <div class='flex items-center justify-between text-stone-900'>
+          <a
+            class='text-sm'
+            href='https://gitlab.com/mieiuminho/mfes/java_project_analyser'
+            target='_blank'>Visit the repository</a
+          >
+          <Gitlab size={30} />
+        </div>
+      </div>
+    </div>
+  </div>
+</DefaultLayout>

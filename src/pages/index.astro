@@ -1,0 +1,36 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout title='Welcome to Astro.'>
+  <div
+    class='px-16 md:px-32 lg:px-48 xl:px-96 flex flex-col items-center justify-center pb-4'
+  >
+    <div class='flex w-full items-center justify-center'>
+      <img src='/images/profile.jpg' class='rounded-full my-6 max-w-xs' />
+    </div>
+    <div class='flex flex-col items-center justify-center md:px-16'>
+      <p class='text-lg font-semibold pb-10'>
+        Hello there, I am Pedro Ribeiro! 👋
+      </p>
+      <p>
+        I am a <strong>Software Engineer</strong> based in Braga. I am currently
+        studying at <strong>University of Minho</strong> where I am wrapping up my
+        <strong>Masters Degree</strong> in <strong
+          >Distributed Systems & Application Engineering</strong
+        >.
+      </p>
+      <p>
+        I really like to come up with scalable and responsive application
+        architectures that allow for a growth proof deployment and therefore a
+        better user experience. I'm also really into the <strong>DevOps</strong>
+        culture since I like to automate every task I can.
+      </p>
+      <p>
+        Lately I've been dabbling with <strong>Graphic Design</strong> and <strong
+          >Photography</strong
+        > so stay tuned, I might drop some new work soon!
+      </p>
+    </div>
+  </div>
+</DefaultLayout>

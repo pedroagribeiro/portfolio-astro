@@ -1,0 +1,84 @@
+---
+export interface Props {
+  starting_date: string;
+  ending_date: string;
+  company: string;
+  regime: string;
+  position: string;
+  location: string;
+  description: string;
+  technologies?: Array<string>;
+}
+
+const {
+  starting_date,
+  ending_date,
+  company,
+  regime,
+  position,
+  location,
+  description,
+  technologies,
+} = Astro.props;
+---
+
+<div>
+  <p class='pb-6 text-lg font-semibold'>{starting_date} - {ending_date}</p>
+  <div
+    class='bg-stone-300 border-2 border-stone-900 shadow overflow-hidden rounded-lg mb-10'
+  >
+    <div class='px-4 py-5 sm:px-6'>
+      <h3 class='text-lg leading-6 font-medium text-stone-900'>{company}</h3>
+      <p class='mt-1 max-w-2xl text-sm text-stone-600'>{regime}</p>
+    </div>
+    <div class='border-t border-stone-900'>
+      <dl>
+        <div
+          class='bg-stone-300 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'
+        >
+          <dt class='text-sm font-medium text-stone-900'>Location</dt>
+          <dd class='mt-1 text-sm text-stone-900 sm:mt-0 sm:col-span-2'>
+            {location}
+          </dd>
+        </div>
+        <div
+          class='bg-stone-200 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'
+        >
+          <dt class='text-sm font-medium text-stone-900'>Position</dt>
+          <dd class='mt-1 text-sm text-stone-900 sm:mt-0 sm:col-span-2'>
+            {position}
+          </dd>
+        </div>
+        <div
+          class='bg-stone-300 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'
+        >
+          <dt class='text-sm font-medium text-stone-900'>
+            Acquired experiences
+          </dt>
+          <dd class='mt-1 text-sm text-stone-900 sm:mt-0 sm:col-span-2'>
+            {description}
+          </dd>
+        </div>
+        <div
+          class='bg-stone-200 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'
+        >
+          <dt class='text-sm font-medium text-stone-900'>Technologies</dt>
+          <dd
+            class='flex flex-col lg:flex-row space-x-0 space-y-2 lg:space-y-0 items-center lg:space-x-4 mt-1 text-sm text-stone-900 sm:mt-0 sm:col-span-2'
+          >
+            {
+              technologies &&
+                technologies.map((technology: string) => (
+                  <div class='my-2 md:my-0 w-32 inline-block mt-1.5 rounded-lg bg-green-800 text-white'>
+                    <span class='w-32 bg-green-600 inline-block text-center rounded-lg px-3 py-1 -translate-y-1 hover:-translate-y-1.5 items-center'>
+                      {technology}
+                    </span>
+                  </div>
+                ))
+            }
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>

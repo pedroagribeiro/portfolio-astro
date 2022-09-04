@@ -1,0 +1,71 @@
+<header>
+  <nav class='xl:px-48 py-6 md:py-10'>
+    <div class='mx-auto px-2 sm:px-6 lg:px-8'>
+      <div
+        class='px-12 flex-1 flex flex-col lg:flex-row items-center justify-between'
+      >
+        <a href='/' class='mb-4 lg:mb-0'>
+          <div
+            class='flex-shrink-0 flex flex-col sm:flex-row items-center space-x-2 text-2xl lg:text-lg'
+          >
+            <p class='text-stone-900 font-semibold'>pedroagribeiro</p>
+            <p class='text-green-900 font-semibold'>
+              <!-- Find out how to get the current page name -->
+              {Astro.url.pathname} $
+            </p>
+          </div>
+        </a>
+        <div class='block sm:ml-6'>
+          <div
+            class='flex flex-col md:flex-row space-x-0 md:space-x-4 text-md font-medium items-center'
+          >
+            <div
+              class='my-2 md:my-0 w-32 inline-block mt-1.5 rounded-lg bg-stone-800 text-white'
+            >
+              <a href='/projects'>
+                <span
+                  class='w-32 bg-stone-500 inline-block text-center rounded-lg px-3 py-1 -translate-y-1 hover:-translate-y-1.5 items-center'
+                >
+                  Projects
+                </span>
+              </a>
+            </div>
+            <div
+              class='my-2 md:my-0 w-32 inline-block mt-1.5 rounded-lg bg-stone-800 text-white'
+            >
+              <a href='/technologies'>
+                <span
+                  class='w-32 bg-stone-500 inline-block text-center rounded-lg px-3 py-1 -translate-y-1 hover:-translate-y-1.5 items-center'
+                >
+                  Technologies
+                </span>
+              </a>
+            </div>
+            <div
+              class='my-2 md:my-0 w-32 inline-block mt-1.5 rounded-lg bg-stone-800 text-white'
+            >
+              <a href='/experience'>
+                <span
+                  class='w-32 bg-stone-500 inline-block text-center rounded-lg px-3 py-1 -translate-y-1 hover:-translate-y-1.5 items-center'
+                >
+                  Experience
+                </span>
+              </a>
+            </div>
+            <div
+              class='my-2 md:my-0 w-32 inline-block mt-1.5 rounded-lg bg-stone-800 text-white'
+            >
+              <a href='/contact'>
+                <span
+                  class='w-32 bg-stone-500 inline-block text-center rounded-lg px-3 py-1 -translate-y-1 hover:-translate-y-1.5 items-center'
+                >
+                  Contact
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
