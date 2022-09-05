@@ -5,7 +5,7 @@ import InfoModal from '../feedback/InfoModal';
 
 export default function Form() {
   const contact_submit_url =
-    'https://portfolio-backend-production-696d.up.railway.app/api/contacts/submit';
+    'https://backend.pedroagribeiro.me/api/contacts/submit';
 
   const [modal, setModal] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -17,8 +17,9 @@ export default function Form() {
   } = useForm();
 
   const onSubmit = (d: any) => {
+    alert(d);
     axios
-      .post(contact_submit_url, { contact: d })
+      .post(contact_submit_url, { contacts: d })
       .then((res) => {
         console.log(res);
         setModal(true);
